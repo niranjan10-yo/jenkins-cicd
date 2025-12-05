@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cloud Blog</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Styling */
+        header {
+            background: #2c3e50;
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.8;
+        }
+
+        /* Main Container */
+        .container {
+            width: 80%;
+            margin: 2rem auto;
+            max-width: 800px;
+        }
+
+        /* Blog Card Styling */
+        .blog-post {
+            background: #fff;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+
+        .blog-post:hover {
+            transform: translateY(-5px);
+        }
+
+        .post-content {
+            padding: 1.5rem;
+        }
+
+        .post-title {
+            color: #2c3e50;
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .post-date {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .read-more {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            background: #e74c3c;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .read-more:hover {
+            background: #c0392b;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background: #2c3e50;
+            color: #fff;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My AWS Journey</h1>
+        <p>Deployed via Jenkins & Tomcat on Ubuntu</p>
+    </header>
+
+    <div class="container">
+        <article class="blog-post">
+            <div class="post-content">
+                <h2 class="post-title">Setting up Jenkins on AWS</h2>
+                <span class="post-date">Published on October 5, 2025</span>
+                <p>Jenkins is a powerful tool for CI/CD. In this post, I explore how I set up my first automation server on an EC2 Ubuntu instance using the open-source version of Jenkins.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+        </article>
+
+        <article class="blog-post">
+            <div class="post-content">
+                <h2 class="post-title">Why Tomcat?</h2>
+                <span class="post-date">Published on October 6, 2025</span>
+                <p>Apache Tomcat is a web server and servlet container that is used to deploy Java applications. It is lightweight and easy to configure for WAR file deployments.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+        </article>
+
+        <article class="blog-post">
+            <div class="post-content">
+                <h2 class="post-title">Automating the Pipeline</h2>
+                <span class="post-date">Published on October 7, 2025</span>
+                <p>Connecting GitHub to Jenkins allows for seamless integration. Every time code is pushed, Jenkins detects the changes and updates the production server automatically.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+        </article>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 My Tech Blog. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
